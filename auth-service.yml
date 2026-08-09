@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/authdb
+    url: jdbc:postgresql://postgres:5432/authdb
     username: myuser
     password: mypassword
 
@@ -16,7 +16,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery-service:8761/eureka/
 
 jwt:
   secret: 9d8b8d6d3d6e5b2f0c9a1e7f6d5c4b3a9e8f7d6c5b4a3f2e1d9c8b7a6f5e4d3c
